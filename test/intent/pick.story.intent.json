@@ -1,0 +1,6 @@
+{
+  "utterance": "Read me little red riding hood",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "pick.story.intent",
+  "expected_dialog": "pick.story"
+}

@@ -1,0 +1,6 @@
+{
+  "utterance": "what bedtime stories do you know",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "list.stories.intent",
+  "expected_dialog": "list.stories"
+}

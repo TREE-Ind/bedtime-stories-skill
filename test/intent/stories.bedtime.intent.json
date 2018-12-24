@@ -1,0 +1,6 @@
+{
+  "utterance": "Read me a bedtime story",
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "stories.bedtime.intent",
+  "expected_dialog": "stories.bedtime"
+}
