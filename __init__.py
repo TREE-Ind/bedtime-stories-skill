@@ -32,7 +32,7 @@ class BedtimeStories(MycroftSkill):
             'the velveteen rabbit': join(abspath(dirname(__file__)), 'stories', 'the_velveteen_rabbit.mp3'),
             'rumplestiltskin': join(abspath(dirname(__file__)), 'stories', 'rumplestiltskin.mp3'),
             'the emporers new clothes': join(abspath(dirname(__file__)), 'stories', 'the_emporers_new_clothes.mp3'),
-            'the princess on the pea': join(abspath(dirname(__file__)), 'stories', 'the_princess_on_the_pea.mp3'),
+            'the princess and the pea': join(abspath(dirname(__file__)), 'stories', 'the_princess_on_the_pea.mp3'),
             'the elves and the shoemaker': join(abspath(dirname(__file__)), 'stories', 'the_elves_and_the_shoemaker.mp3'),
             'the three billy goats gruff': join(abspath(dirname(__file__)), 'stories', 'the_three_billy_goats_gruff.mp3'),
             'peter rabbit': join(abspath(dirname(__file__)), 'stories', 'peter_rabbit.mp3'),
