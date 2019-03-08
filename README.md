@@ -1,4 +1,4 @@
-# <img src='https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/book-open.svg' card_color='#52B54B' width='50' height='50' style='vertical-align:bottom'/> Bedtime Stories Skill
+# <img src='https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/book-open.svg' card_color='#52B54B' width='50' height='50' style='vertical-align:bottom'/> Bedtime Stories
 Listen to famous bedtime stories.
 
 ## About
