@@ -2,7 +2,6 @@ from os.path import join, abspath, dirname
 import os.path
 import random
 from adapt.tools.text.tokenizer import EnglishTokenizer
-from mycroft.messagebus.client.ws import WebsocketClient
 from mycroft.messagebus.message import Message
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
@@ -16,16 +15,16 @@ from mycroft.skills.context import *
 class BedtimeStories(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        
+
     def initialize(self):
-        
+
         #Register list of story titles that are held in a padatious entity
         self.register_entity_file("title.entity")
         self.process = None
-        
+
         #Build story list
         self.play_list = {
-            'twas the night before christmas': join(abspath(dirname(__file__)), 'stories', 'twas_the_night_before_christmas.mp3'),    
+            'twas the night before christmas': join(abspath(dirname(__file__)), 'stories', 'twas_the_night_before_christmas.mp3'),
             'little red riding hood': join(abspath(dirname(__file__)), 'stories', 'little_red_riding_hood.mp3'),
             'the three bears': join(abspath(dirname(__file__)), 'stories', 'the_three_bears.mp3'),
             'hansel and gretel': join(abspath(dirname(__file__)), 'stories', 'hansel_and_gretel.mp3'),
@@ -71,7 +70,7 @@ class BedtimeStories(MycroftSkill):
         story_list = list(self.play_list.keys())
         print(story_list)
         self.speak_dialog('list.stories', data=dict(stories=story_list))
-    
+
     def stop(self):
         if self.process and self.process.poll() is None:
             self.process.terminate()
